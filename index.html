@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<title>Design Sydney Agency</title>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="img/favicon.png"> <!-- FAVICON -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.css' rel='stylesheet' />
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+
+
+		<!-- JAVASCRIPT -->
+		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.2/mapbox-gl.js'></script>	
+	</head>
+	<body>
+    
+   	<div id="header">
+		<h1>CREATE A ONLINE DEMANDE FOR YOU OFFLINE BUSINESS</h1>
+
+		<div id="trustedpartner">
+	    	<h1>THEY TRUST US</h1>
+	    	<ul>
+	    		<li><img src="img/uberL.svg"></li>
+	    		<li><img src="img/fairfaxL.svg"></li>
+	    		<li><img src="img/hellofreshL.svg"></li>
+	    	</ul>
+	    </div>
+    </div>
+
+    <div id="menu" class="active">
+    	<ul>
+    		<li><a onclick="IntoAnchor(0);" href="#/" class="active">HOME</a></li>
+    		<li><a onclick="IntoAnchor(1);" href="#/">SERVICES</a></li>
+    		<li><a onclick="IntoAnchor(2);" href="#/">INDUSTRIE</a></li>
+    		<li><a onclick="IntoAnchor(3);" href="#/">ABOUT</a></li>
+    	</ul>
+
+    	<a onclick="IntoAnchor(4);" href="#/" id="quoterequest">REQUEST A QUOTE</a>
+    </div>
+    
+
+
+    <div id="history">
+    	<h1>WE GROW YOUR BUSINESS</h1>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	<span class="dot" ></span>
+    </div>
+
+    <div id="services" >
+    	<h1>OUR SERVICES</h1>	
+    	<ul>
+    		<li><img src="img/IconConsulting.svg"><h1>CONSULTING</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+    		<li><img src="img/IconSeo.svg"><h1>SEO</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+    		<li><img src="img/IconWebdesign.svg"><h1>WEBDESIGN</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+    		<li><img src="img/IconUxdesign.svg"><h1>UX DESIGN</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+    		<li><img src="img/IconMobiledesign.svg"><h1>MOBILE DESIGN</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+    		<li><img src="img/IconMarketing.svg"><h1>MARKETING</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+    	</ul>
+    	<span class="dot" ></span>
+    </div>
+
+    <div id="customer">
+    	<h1>OUR CLIENTS</h1>
+    	<ul>
+    		<li><img src="img/CustomerLine1.svg"></li>
+    		<li><img src="img/CustomerLine2.svg"></li>
+    		<li><img src="img/CustomerLine3.svg"></li>
+    	</ul>
+    	<span class="dot" ></span>
+    </div>
+
+    <div id="quote">
+    	<h1>GET YOUR FREE QUOTE</h1>
+
+    	<form>
+    		<label>What are you interest in ? (Requierd)</label><br />
+    		<div class="checkbox">
+    			<input type="checkbox" class="input_checkbox" name="interest" value="Webdesign">
+    			<p class="checkbox_label">Webdesign</p>
+    		</div>
+    		<div class="checkbox">
+  				<input type="checkbox" class="input_checkbox" name="interest" value="PrintDesign">
+  				<p class="checkbox_label">Print Design</p>
+  			</div>
+  			<div class="checkbox">
+  				<input type="checkbox" class="input_checkbox" name="interest" value="MobileDesign">
+  				<p class="checkbox_label">Mobile Design</p>
+  			</div>
+  			<div class="checkbox">
+  				<input type="checkbox" class="input_checkbox" name="interest" value="CorporateDesign">
+  				<p class="checkbox_label">Corporate Design</p>
+  			</div>
+
+  			<div class="input_container">
+  				<label>What are your company’s name ? (Requierd)</label><br />
+  				<input type="text" name="CompanyName" placeholder="Company Name"><br />
+			</div>
+			<div class="input_container">
+  				<label>What are your name ? (Requierd)</label><br />
+  				<input type="text" name="ClientName" placeholder="Name"><br />
+  			</div>
+  			<div class="input_container">
+  				<label>What are your position? (Requierd)</label><br />
+  				<input type="text" name="ClientPosition" placeholder="Position"><br />
+  			</div>
+  			<div class="input_container">
+  				<label>What are your email ? (Requierd)</label><br />
+  				<input type="email" name="ClientEmail" placeholder="Email"><br />
+  			</div>
+  			<div class="input_container">
+  				<label>What are your phone number ? (Requierd)</label><br />
+  				<input type="phone" name="ClientPhone" placeholder="Phone"><br />
+  			</div>
+  			<div class="input_container">
+  				<label>Elevator Pitch, what do you need  ?</label><br />
+  				<textarea>I looking for a website to help my customer to found me and keept inform of my new products !</textarea>
+  			</div>
+  			<a href="#">GET YOUR FREE QUOTE</a>
+    	</form>
+    </div>
+
+    <div id="map">
+    </div>
+
+    <a id="contact_button">Contact Us</a>
+		
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script>mapboxgl.accessToken = 'pk.eyJ1Ijoib3p6eXJpcyIsImEiOiItbkRBQ1JBIn0.yITAz0YP2BPNAhvGjwzqHw';
+
+    var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'mapbox://styles/mapbox/dark-v8', //hosted style id
+        center: [151.223327, -33.877242], // starting position
+        zoom: 12, // starting zoom
+        interactive: false
+    });
+
+    var tooltip = new mapboxgl.Popup({closeOnClick: false})
+    .setLngLat([151.223327, -33.877242])
+    .setHTML('<h1>Design Sydney Agency</h1><ul><li>61 Surrey Street</li><li>Darlinghurst</li><li>Sydney</li><li>0423.228.030</li></ul>')
+    .addTo(map);
+    </script>
+	</body>
+	
+</html>
